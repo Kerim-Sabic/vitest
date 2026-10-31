@@ -153,6 +153,7 @@ export async function runBaseTests(
   const { ctx } = state
   state.environment = _currentEnvironment
   state.durations.environment = _environmentTime
+  _environmentTime = 0
   // state has new context, but we want to reuse existing ones
   state.evaluatedModules = evaluatedModules
   state.moduleExecutionInfo = moduleExecutionInfo
